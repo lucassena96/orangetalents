@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Implementation-Title: Spring Boot Blank Project (from https://github.c
+ om/making/spring-boot-blank)
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Lucas
+Implementation-Vendor-Id: zup
+Build-Jdk: 1.8.0_111
+Implementation-URL: https://spring.io/projects/spring-boot/orangetalen
+ ts
+Created-By: Maven Integration for Eclipse
+Main-Class: zup.orangetalents.App
+

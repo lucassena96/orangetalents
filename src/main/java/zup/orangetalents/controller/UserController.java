@@ -62,12 +62,12 @@ public class UserController {
     	entityManager.persist(user);
     	
     	//
-    	return new ResponseEntity<>(userMapper.entityToModel(user), HttpStatus.OK);
+    	return new ResponseEntity<>(userMapper.entityToModel(user), HttpStatus.CREATED);
     }
     
     
     @GetMapping("/user/{id}")
-    public ResponseEntity<UserResponse> register(@PathVariable("id") Integer userId) throws UserException {
+    public ResponseEntity<UserResponse> getById(@PathVariable("id") Integer userId) throws UserException {
 
     	List<?> result = entityManager
 			    		.createQuery("SELECT u FROM User u WHERE u.id = :id")

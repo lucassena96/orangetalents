@@ -62,6 +62,6 @@ public class AddressController {
 		Address address = addressMapper.modelToEntity(userRequest);
 		entityManager.persist(address);
 		
-		return new ResponseEntity<>(addressMapper.entityToModel(address), HttpStatus.OK);
+		return new ResponseEntity<>(addressMapper.entityToModel(address), HttpStatus.CREATED);
     }
 }
